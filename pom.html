@@ -31,8 +31,8 @@ function playSound () {
 	let ding = new Audio('ding.mp3');
 	ding.play();
 }
-        
-playSound();
+
+
 "use strict";
 
 /**
@@ -291,6 +291,7 @@ class PomodoroTimerComponent
         requestAnimationFrame(function(){
             this.render();
         }.bind(this));
+	playSound();
     }
 }
 
