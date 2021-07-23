@@ -261,6 +261,7 @@ class PomodoroTimerComponent
                     // We are at the end of the queue
                     this.event_stopTimer.call(this);
                 }
+		playSound();
             }
         }
 
@@ -291,7 +292,7 @@ class PomodoroTimerComponent
         requestAnimationFrame(function(){
             this.render();
         }.bind(this));
-	playSound();
+	
     }
 }
 
